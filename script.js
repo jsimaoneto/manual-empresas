@@ -249,12 +249,11 @@
   ligarSanfona('.faq-item', '.faq-item__head');
 
   /* =====================================================================
-     FORMULÁRIO: enquanto o endpoint não estiver configurado,
-     envia os dados pelo WhatsApp já preenchidos.
+     FORMULÁRIO: monta a mensagem e abre o WhatsApp já preenchido.
      ===================================================================== */
 
   var form = document.getElementById('contatoForm');
-  if (form && form.getAttribute('action').indexOf('SEU_ID_AQUI') !== -1) {
+  if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var texto =

@@ -78,16 +78,15 @@ manual-empresas/sitemap.xml
 
 ---
 
-## O QUE FALTA VOCÊ PREENCHER
+## Contato e formulário ✅
 
-### 1. Instagram
-Procure no `index.html` por `TROCAR` (2 ocorrências) e substitua
-`https://www.instagram.com/` pelo endereço real do seu perfil.
+- **Instagram:** [@j_simao_neto](https://www.instagram.com/j_simao_neto/), no rodapé e na seção de contato
+- **Formulário:** envia pelo **WhatsApp**. Ao clicar em *Enviar pelo WhatsApp*, o site
+  monta a mensagem com nome, empresa, telefone, número de colaboradores e a situação
+  descrita, e abre a conversa já preenchida. A pessoa só confere e envia.
 
-### 2. Formulário de contato
-O formulário funciona já: sem configuração, ele abre o WhatsApp com os dados
-preenchidos. Para receber por e-mail, crie conta gratuita em
-[formspree.io](https://formspree.io) e substitua `SEU_ID_AQUI` no `action`.
+  Não depende de serviço externo nem de servidor, então funciona no GitHub Pages sem
+  configuração. O texto da mensagem fica no fim do `script.js`, no bloco `contatoForm`.
 
 ---
 
@@ -180,6 +179,6 @@ tudo já revelado. É o comportamento correto de acessibilidade.
 
 ## Cache ao atualizar
 
-O CSS e o JS são chamados com `?v=5`. Ao editar esses arquivos, **suba esse número**
+O CSS e o JS são chamados com `?v=6`. Ao editar esses arquivos, **suba esse número**
 (`?v=6`, `?v=7`…) nas duas linhas do `index.html`, senão o navegador de quem já visitou
 continua servindo a versão antiga.
