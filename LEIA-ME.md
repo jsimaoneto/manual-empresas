@@ -106,6 +106,28 @@ e a diagramação continuam aparecendo, que é o que vende.
 
 Todas já estão instaladas. Nenhum prompt pendente.
 
+## Artes do topo ✅
+
+Cinco peças do seu material de divulgação, rodando no topo do site a cada 4,5
+segundos, com bolinhas para navegar. São 1080×1080, vindas da pasta
+`Desktop/Imagens`.
+
+| Arquivo | Origem | O que mostra |
+|---|---|---|
+| `art-capa.jpg` | `instagram_01` | Capa do manual |
+| `art-pilares.jpg` | `instagram_04` | Os quatro pilares |
+| `art-transformacao.jpg` | `instagram_07` | Antes e depois |
+| `art-cargos.jpg` | `instagram_08` | Lista de cargos descritos |
+| `art-autoridade.jpg` | `instagram_05` | Assinatura e CRP |
+
+A `art-capa.jpg` também virou a imagem de compartilhamento, no lugar do retrato.
+
+**Sobraram 8 peças** na pasta do Desktop que ainda não entraram: `instagram_02`,
+`03`, `06`, `09`, `10` e as três `resumo_*`. Elas conversam com seções que já
+existem no site, então é só dizer onde quer cada uma.
+
+---
+
 ## Mockups do manual ✅
 
 Montados a partir das **páginas reais dos PDFs**, renderizadas em 200 dpi e compostas
@@ -179,6 +201,6 @@ tudo já revelado. É o comportamento correto de acessibilidade.
 
 ## Cache ao atualizar
 
-O CSS e o JS são chamados com `?v=6`. Ao editar esses arquivos, **suba esse número**
+O CSS e o JS são chamados com `?v=7`. Ao editar esses arquivos, **suba esse número**
 (`?v=6`, `?v=7`…) nas duas linhas do `index.html`, senão o navegador de quem já visitou
 continua servindo a versão antiga.

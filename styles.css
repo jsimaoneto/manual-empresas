@@ -768,3 +768,9 @@ img.logo__mark{
 .mini-list{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
 .mini-list li{display:flex;gap:.6rem;font-size:.9rem;color:var(--text-muted)}
 .mini-list svg{width:14px;height:14px;color:var(--gold-600);margin-top:.35rem;flex:none}
+
+/* showcase encaixado dentro de uma moldura existente */
+.showcase--limpo{
+  position:absolute;inset:0;
+  aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;
+}
