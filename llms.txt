@@ -1,0 +1,71 @@
+# Manual de Estruturação Organizacional — J. Simão Neto (Sorocaba, SP)
+
+> Serviço de consultoria que produz um manual organizacional sob medida para
+> empresas de qualquer ramo e porte: cultura (missão, visão e valores), descrição
+> de todos os cargos com classificação na CBO, checklist de rotinas por cargo e
+> políticas internas em conformidade com a CLT, a NR-1, a LGPD, o COAF e as normas
+> do setor. Conduzido por psicólogo organizacional, CRP 06/92454-SP.
+
+## Identificação
+
+- **Serviço:** Manual de Estruturação Organizacional (manual organizacional, manual da empresa)
+- **Responsável técnico:** José Simão Neto, Psicólogo Organizacional e Clínico, CRP 06/92454-SP
+- **Empresa:** Centro Clínico Campolim
+- **Endereço:** Av. Mário Campolim, 560, Parque Campolim, Sorocaba SP, CEP 18047-600
+- **WhatsApp:** (15) 99755-5018
+- **E-mail:** jsimaoneto@gmail.com
+- **Abrangência:** todo o Brasil, presencial ou remoto
+- **Site:** https://jsimaoneto.github.io/manual-empresas/
+
+## O que o manual contém
+
+- **Parte I — Cultura organizacional:** apresentação e fundamentação teórica, missão, visão e valores desdobrados em competências comportamentais observáveis
+- **Parte II — Políticas internas:** conduta e ética, jornada de trabalho e registro de ponto, uso de recursos e equipamentos, redes sociais e imagem, confidencialidade e proteção de dados, saúde e segurança do trabalho, prevenção à lavagem de dinheiro, padrão de atendimento, medidas disciplinares
+- **Parte III — Descrição de cargos:** um capítulo por cargo, com denominação e código na Classificação Brasileira de Ocupações (CBO), família ocupacional, subordinação hierárquica, escolaridade, missão do cargo, responsabilidades e competências
+- **Checklist de rotina por cargo:** documento avulso para imprimir e entregar ao colaborador, com rotina diária em ordem cronológica, semanal, quinzenal, mensal e funções esporádicas
+- **Parte IV — Remuneração e governança:** política de remuneração e comissionamento, gestão de pessoas, avaliação de desempenho, governança e conformidade
+- **Anexos:** termos de ciência para assinatura, referências bibliográficas e controle de versão
+
+## Por que uma empresa precisa de manual
+
+**Organizacional**
+- Cultura escrita funciona como critério de decisão quando a regra formal não alcança a situação
+- Descrição de cargos elimina ambiguidade de função, sobreposição e retrabalho
+- Padronização preserva o método quando há rotatividade de pessoal
+- Integração e treinamento deixam de consumir a liderança
+- Governança permite que a operação funcione sem depender da presença do fundador
+
+**Jurídica**
+- O regulamento interno materializa o poder diretivo do empregador e serve como prova documental em reclamatória trabalhista
+- Dá respaldo à gradação disciplinar (orientação verbal, advertência, suspensão) e à justa causa do artigo 482 da CLT
+- Documenta o gerenciamento dos fatores de risco psicossociais exigido pela NR-1, obrigatório e fiscalizável desde 26 de maio de 2026 (Portaria MTE nº 1.419/2024), para toda empresa com empregados
+- Registra a política de proteção de dados exigida pela LGPD (Lei nº 13.709/2018)
+- Traduz obrigações setoriais em procedimento: CDC, Lei nº 9.613/1998 (COAF), normas de conselho e vigilância, NRs específicas
+
+## Para quem é
+
+Empresas de qualquer segmento com mais de uma pessoa trabalhando: comércio, indústria,
+prestação de serviços, clínicas e consultórios, escritórios, restaurantes, transportadoras,
+construtoras, escolas, comércio eletrônico, oficinas, salões e revendas. Indicado
+especialmente para empresas que ainda não têm área de RH formalmente estruturada.
+
+## Como funciona
+
+1. **Diagnóstico** — conversa inicial gratuita, da qual saem a estratégia, o valor fechado e o prazo
+2. **Escuta e imersão** — no mínimo quatro sessões online com a direção e os colaboradores-chave
+3. **Redação** — elaboração do manual com fundamentação técnica e legal
+4. **Validação** — apresentação da versão preliminar e ajustes com a direção
+5. **Entrega** — documento final diagramado em cerca de 30 dias
+
+## Investimento
+
+- R$ 200,00 por sessão de trabalho, mínimo de 4 sessões, todas online
+- Consulta inicial gratuita e sem compromisso, na qual se define escopo, valor total e prazo
+- Prazo médio de entrega: 30 dias
+
+## Links
+
+- Site do serviço: https://jsimaoneto.github.io/manual-empresas/
+- José Simão Neto, psicólogo: https://jsimaoneto.github.io/psimaoneto/
+- Centro Clínico Campolim: https://jsimaoneto.github.io/ccc/
+- Contato direto (WhatsApp): https://wa.me/5515997555018
