@@ -265,4 +265,155 @@
       window.open('https://wa.me/5515997555018?text=' + texto, '_blank', 'noopener');
     });
   }
+
+  /* =====================================================================
+     AMPLIAR IMAGEM  ·  clique em qualquer imagem para ver em tela cheia.
+     Navega entre as imagens do mesmo bloco com as setas, o teclado
+     ou arrastando o dedo.
+     ===================================================================== */
+
+  (function () {
+    var caixa = document.getElementById('lightbox');
+    if (!caixa) return;
+
+    var img = caixa.querySelector('.lightbox__img');
+    var btnFechar = caixa.querySelector('.lightbox__fechar');
+    var btnAnt = caixa.querySelector('.lightbox__nav--ant');
+    var btnProx = caixa.querySelector('.lightbox__nav--prox');
+    var contador = caixa.querySelector('.lightbox__contador');
+
+    var grupo = [];      // [{src, alt, dot}]
+    var atual = 0;
+    var focoAnterior = null;
+
+    function urlDoFundo(el) {
+      var bg = getComputedStyle(el).backgroundImage;
+      var m = bg && bg.match(/url\(["']?(.*?)["']?\)/);
+      return m ? m[1] : null;
+    }
+
+    /* monta o grupo a partir do bloco que contem a imagem clicada */
+    function montarGrupo(alvo) {
+      var bloco = alvo.closest('[data-showcase]');
+      if (bloco) {
+        var figs = [].slice.call(bloco.querySelectorAll('.showcase__img'));
+        var dots = [].slice.call(bloco.querySelectorAll('.showcase__dot'));
+        return figs.map(function (f, i) {
+          return {
+            src: urlDoFundo(f),
+            alt: f.getAttribute('aria-label') || '',
+            dot: dots[i] || null
+          };
+        }).filter(function (x) { return x.src; });
+      }
+      if (alvo.tagName === 'IMG') {
+        return [{ src: alvo.currentSrc || alvo.src, alt: alvo.alt || '', dot: null }];
+      }
+      var u = urlDoFundo(alvo);
+      return u ? [{ src: u, alt: alvo.getAttribute('aria-label') || '', dot: null }] : [];
+    }
+
+    function mostrar(i) {
+      caixa.classList.remove('is-zoom');
+      caixa.scrollTop = 0;
+      atual = (i + grupo.length) % grupo.length;
+      var item = grupo[atual];
+      img.src = item.src;
+      img.alt = item.alt;
+
+      var varias = grupo.length > 1;
+      btnAnt.hidden = !varias;
+      btnProx.hidden = !varias;
+      contador.hidden = !varias;
+      if (varias) contador.textContent = (atual + 1) + ' de ' + grupo.length;
+    }
+
+    function abrir(alvo) {
+      grupo = montarGrupo(alvo);
+      if (!grupo.length) return;
+
+      var inicio = 0;
+      var bloco = alvo.closest('[data-showcase]');
+      if (bloco) {
+        var figs = [].slice.call(bloco.querySelectorAll('.showcase__img'));
+        var iAtiva = figs.indexOf(alvo);
+        inicio = iAtiva >= 0 ? iAtiva : figs.findIndex(function (f) {
+          return f.classList.contains('is-active');
+        });
+        if (inicio < 0) inicio = 0;
+      }
+
+      focoAnterior = document.activeElement;
+      mostrar(inicio);
+      caixa.hidden = false;
+      document.body.classList.add('com-lightbox');
+      requestAnimationFrame(function () { caixa.classList.add('is-open'); });
+      btnFechar.focus();
+    }
+
+    function fechar() {
+      caixa.classList.remove('is-open', 'is-zoom');
+      document.body.classList.remove('com-lightbox');
+
+      // deixa o carrossel na mesma imagem em que a pessoa parou
+      var item = grupo[atual];
+      if (item && item.dot) item.dot.click();
+
+      window.setTimeout(function () {
+        caixa.hidden = true;
+        img.removeAttribute('src');
+      }, 280);
+
+      if (focoAnterior && focoAnterior.focus) focoAnterior.focus();
+    }
+
+    /* clique nas imagens do site */
+    document.addEventListener('click', function (e) {
+      var alvo = e.target.closest('.showcase__img, .frame__inner img');
+      if (!alvo) return;
+      e.preventDefault();
+      abrir(alvo);
+    });
+
+    /* controles */
+    btnFechar.addEventListener('click', fechar);
+    btnAnt.addEventListener('click', function () { mostrar(atual - 1); });
+    btnProx.addEventListener('click', function () { mostrar(atual + 1); });
+
+    /* clicar no fundo fecha; clicar na imagem alterna o zoom */
+    caixa.addEventListener('click', function (e) {
+      if (e.target === caixa) fechar();
+    });
+
+    img.addEventListener('click', function () {
+      var ampliando = !caixa.classList.contains('is-zoom');
+      caixa.classList.toggle('is-zoom', ampliando);
+      if (ampliando) {
+        // centraliza a vista horizontalmente na primeira ampliacao
+        caixa.scrollLeft = Math.max(0, (img.offsetWidth - caixa.clientWidth) / 2);
+      } else {
+        caixa.scrollTop = 0;
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (caixa.hidden) return;
+      if (e.key === 'Escape') { fechar(); }
+      else if (e.key === 'ArrowLeft' && grupo.length > 1) { mostrar(atual - 1); }
+      else if (e.key === 'ArrowRight' && grupo.length > 1) { mostrar(atual + 1); }
+      else if (e.key === 'Tab') { e.preventDefault(); btnFechar.focus(); }
+    });
+
+    /* arrastar o dedo no celular */
+    var x0 = null;
+    caixa.addEventListener('touchstart', function (e) {
+      x0 = e.changedTouches[0].clientX;
+    }, { passive: true });
+    caixa.addEventListener('touchend', function (e) {
+      if (x0 === null || grupo.length < 2) return;
+      var d = e.changedTouches[0].clientX - x0;
+      if (Math.abs(d) > 45) mostrar(atual + (d < 0 ? 1 : -1));
+      x0 = null;
+    }, { passive: true });
+  })();
 })();

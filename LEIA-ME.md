@@ -180,6 +180,28 @@ e o WhatsApp corta. Se quiser uma arte horizontal dedicada, salve como
 
 ---
 
+# Ampliar imagem
+
+Clicar em qualquer imagem do site abre ela em tela cheia sobre um fundo escuro.
+Vale para as artes do topo, os mockups do manual, as fotos do Centro Clínico e o retrato.
+
+| Ação | Como |
+|---|---|
+| Abrir | Clique na imagem |
+| Navegar | Setas na tela, teclas ← →, ou arrastar o dedo no celular |
+| Ampliar mais | Clique de novo na imagem: ela vai ao tamanho real e dá para arrastar |
+| Fechar | Botão X, tecla Esc, ou clique no fundo |
+
+Quando a imagem faz parte de um carrossel, o lightbox mostra o contador
+("3 de 5") e navega dentro daquele bloco. Ao fechar, o carrossel fica parado
+na mesma imagem em que a pessoa estava.
+
+O zoom foi pensado para o celular: uma página do manual em tela de 375px fica
+com 339px de largura, pequena demais para ler as tabelas. Com um toque a mais
+ela vai para o tamanho real e dá para arrastar e ler.
+
+---
+
 # Efeitos e animações
 
 Mesmo motor do site josesimaoneto, sem biblioteca externa:
@@ -201,6 +223,6 @@ tudo já revelado. É o comportamento correto de acessibilidade.
 
 ## Cache ao atualizar
 
-O CSS e o JS são chamados com `?v=7`. Ao editar esses arquivos, **suba esse número**
+O CSS e o JS são chamados com `?v=9`. Ao editar esses arquivos, **suba esse número**
 (`?v=6`, `?v=7`…) nas duas linhas do `index.html`, senão o navegador de quem já visitou
 continua servindo a versão antiga.
