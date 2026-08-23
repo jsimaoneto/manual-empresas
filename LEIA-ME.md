@@ -90,14 +90,25 @@ manual-empresas/sitemap.xml
 
 ---
 
-## ⚠️ Um ponto para você decidir
+## ⚠️ Um ponto que ainda merece atenção
 
-As imagens do showcase são **páginas reais do manual da Elite Car**, e os cabeçalhos
-e rodapés trazem o nome da empresa e a cidade. Não há dado pessoal de colaborador nem
-valor de salário nas páginas escolhidas, mas o documento é interno do cliente.
+A **capa** já foi trocada pela versão genérica ("Sua marca aqui"), então o cliente
+não aparece mais na imagem principal.
 
-Vale confirmar com eles antes de publicar. Se preferir, eu regero os mockups com o
-nome da empresa borrado ou substituído por um nome fictício — a estrutura, as tabelas
+Mas as **páginas internas** dos mockups continuam sendo páginas reais do manual da
+Elite Car, e os cabeçalhos e rodapés ainda trazem o nome da empresa e a cidade:
+
+| Imagem | Onde o nome aparece |
+|---|---|
+| `mk-leque.jpg` | rodapé das duas páginas atrás da capa |
+| `mk-capa.jpg` | cabeçalho da página que espia atrás |
+| `mk-missao-valores.jpg` | rodapé das duas páginas |
+| `mk-cargos.jpg` | cabeçalho e rodapé das duas páginas |
+| `mk-politicas.jpg` | cabeçalho e rodapé das duas páginas |
+
+Não há dado pessoal de colaborador nem valor de salário nas páginas escolhidas.
+Ainda assim, com o lightbox a pessoa consegue ampliar e ler. Se quiser, eu regero
+essas quatro com o nome borrado ou trocado por um fictício — a estrutura, as tabelas
 e a diagramação continuam aparecendo, que é o que vende.
 
 ---
@@ -135,11 +146,14 @@ sobre o fundo azul-marinho do site, com sombra e leve inclinação, como um manu
 
 | Arquivo | O que mostra | Onde aparece |
 |---|---|---|
-| `hero-manual.jpg` | Três páginas em leque: a capa preta e dourada, a descrição de cargo e os valores | Topo do site |
-| `mk-capa.jpg` | Capa preta e dourada do documento, com o logo do Centro Clínico | Showcase, 1º |
-| `mk-missao-valores.jpg` | Missão e visão + a tabela dos 8 valores | Showcase, 2º |
-| `mk-cargos.jpg` | Descrição de cargo com CBO + checklist de rotina | Showcase, 3º |
-| `mk-politicas.jpg` | Políticas internas, conduta e ética | Showcase, 4º |
+| `mk-leque.jpg` | Três páginas em leque: capa, descrição de cargo e valores | Showcase, 1º |
+| `mk-capa.jpg` | A capa sozinha, com uma página espiando atrás | Showcase, 2º |
+| `mk-missao-valores.jpg` | Missão e visão + a tabela dos 8 valores | Showcase, 3º |
+| `mk-cargos.jpg` | Descrição de cargo com CBO + checklist de rotina | Showcase, 4º |
+| `mk-politicas.jpg` | Políticas internas, conduta e ética | Showcase, 5º |
+
+A capa usada é a versão **"Sua marca aqui"**, que vende melhor do que a de um cliente:
+quem olha imagina a própria marca ali.
 
 **Para regerar com outras páginas:** os mockups saem de um script que renderiza o PDF
 e compõe a arte. Me diga quais páginas quer no lugar e eu refaço.
@@ -223,6 +237,6 @@ tudo já revelado. É o comportamento correto de acessibilidade.
 
 ## Cache ao atualizar
 
-O CSS e o JS são chamados com `?v=9`. Ao editar esses arquivos, **suba esse número**
+O CSS e o JS são chamados com `?v=10`. Ao editar esses arquivos, **suba esse número**
 (`?v=6`, `?v=7`…) nas duas linhas do `index.html`, senão o navegador de quem já visitou
 continua servindo a versão antiga.
