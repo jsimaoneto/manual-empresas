@@ -38,7 +38,7 @@
 **Jurídica**
 - O regulamento interno materializa o poder diretivo do empregador e serve como prova documental em reclamatória trabalhista
 - Dá respaldo à gradação disciplinar (orientação verbal, advertência, suspensão) e à justa causa do artigo 482 da CLT
-- Documenta o gerenciamento dos fatores de risco psicossociais exigido pela NR-1, obrigatório e fiscalizável desde 26 de maio de 2026 (Portaria MTE nº 1.419/2024), para toda empresa com empregados
+- Documenta o gerenciamento dos fatores de risco psicossociais exigido pela NR-1, obrigatório e fiscalizável desde 26 de maio de 2026 (Portaria MTE nº 1.419/2024). O instrumento varia conforme o porte e o grau de risco, PGR na maioria dos casos e avaliação ergonômica preliminar para o MEI e para parte das ME e EPP, mas a obrigação de identificar e documentar os fatores psicossociais alcança toda empresa com empregados
 - Registra a política de proteção de dados exigida pela LGPD (Lei nº 13.709/2018)
 - Traduz obrigações setoriais em procedimento: CDC, Lei nº 9.613/1998 (COAF), normas de conselho e vigilância, NRs específicas
 
