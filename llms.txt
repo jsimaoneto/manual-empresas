@@ -51,7 +51,6 @@ Conduzido pelo mesmo psicólogo que escreve o manual, partindo da descrição de
 - **Entrevista por competências:** roteiro construído a partir da descrição do cargo, com perguntas sobre situações reais já vividas pelo candidato
 - **Relatório de personalidade e perfil:** um documento por candidato entrevistado, com trajetória e coerência, funcionamento na rotina, relação com autoridade e convívio, comunicação, motivação e projeto, e aderência ao cargo
 - **Dinâmicas de grupo analíticas:** quando a vaga exige, para observar comunicação, cooperação e postura em situação prática
-- **Testagem psicológica:** apenas quando o cargo justifica, com instrumentos aprovados pelo SATEPSI (Resolução CFP nº 09/2018)
 
 **Ciclo completo:** manual (cargo escrito) → anúncio (vaga descrita como ela é) → seleção (entrevistas e dinâmicas) → decisão (relatório de perfil para a direção) → integração (quem chega é recebido pelo manual do cargo).
 
