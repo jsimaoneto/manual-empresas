@@ -357,6 +357,10 @@ p{margin:0}
   background:rgba(232,200,106,.09);border:1px solid rgba(232,200,106,.28);color:var(--gold-200);
 }
 .legal-note b{color:var(--gold-400);display:block;margin-bottom:.3rem;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
+/* variante para fundo claro (seção de análise de perfil) */
+.legal-note--claro{background:rgba(201,162,39,.07);border-color:rgba(201,162,39,.32);color:var(--text-muted)}
+.legal-note--claro b{color:var(--gold-700)}
+.legal-note--claro strong{color:var(--navy-800)}
 .deep-cta{
   margin-top:1.2rem;padding-top:1.1rem;border-top:1px dashed rgba(232,200,106,.28);
   display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:space-between;
